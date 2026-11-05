@@ -1,0 +1,6 @@
+{
+  "name": "ÉPURE Atelier — Ropa Minimalista & Siluetas Atemporales",
+  "description": "Boutique digital de moda minimalista de alta gama. Colecciones atemporales confeccionadas en lino francés, seda pura y lana merino.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
