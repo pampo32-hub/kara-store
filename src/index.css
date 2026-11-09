@@ -24,6 +24,10 @@
   font-family: 'Caveat', cursive, sans-serif;
 }
 
+.font-logo {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
 /* Bullet journal / Scrapbook dot grid */
 .bg-dot-grid {
   background-color: #FAF7F2;
