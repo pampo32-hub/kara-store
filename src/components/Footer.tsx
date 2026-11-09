@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check, Instagram } from 'lucide-react';
-import { Logo } from './Logo';
 
 interface FooterProps {
   onOpenSizeGuide: () => void;
@@ -26,8 +25,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenSizeGuide, onNavigate }) =
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-[#2E2A27]">
           
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <Logo variant="badge" size="md" />
+            <div className="flex items-baseline gap-2">
+              <h3 className="font-serif text-3xl tracking-[0.1em] text-[#FBF9F5]">
+                KARA SHOP
+              </h3>
+              <span className="text-xs font-mono tracking-widest text-[#A8A29E]">CR</span>
             </div>
             <p className="text-xs text-[#A8A29E] leading-relaxed max-w-sm">
               Boutique femenina en línea en Costa Rica. Ropa aesthetic, colores claros, siluetas cómodas y versátiles. Envíos por Correos de CR y sistema de apartado.

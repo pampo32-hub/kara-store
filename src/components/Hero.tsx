@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, ShieldCheck, Truck, RefreshCw, Heart } from 'lucide-react';
 import { HERO_IMAGE, HERO_FALLBACK_IMAGE } from '../data/products';
-import { Logo } from './Logo';
 
 interface HeroProps {
   onExplore: () => void;
@@ -30,10 +29,19 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onOpenStory }) => {
           {/* Left Column: Scrapbook Diary Style */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-5 lg:space-y-6">
             
-            {/* Brand Kicker: by fio CR */}
-            <div className="flex items-center gap-2 select-none">
-              <Logo variant="badge" size="sm" />
-              <span className="cutout-box bg-[#FEF08A] text-[#713F12] border border-[#FACC15] text-xs font-bold" style={{ '--rot': '-1deg' } as any}>Costa Rica 🇨🇷</span>
+            {/* Cutout Letter Kicker: KARA SHOP CR */}
+            <div className="flex items-center gap-1.5 flex-wrap select-none">
+              <span className="cutout-box bg-[#881337] text-white text-xs" style={{ '--rot': '-2deg' } as any}>K</span>
+              <span className="cutout-box bg-[#F43F5E] text-white text-xs" style={{ '--rot': '3deg' } as any}>A</span>
+              <span className="cutout-box bg-[#F59E0B] text-white text-xs" style={{ '--rot': '-1deg' } as any}>R</span>
+              <span className="cutout-box bg-[#3B82F6] text-white text-xs" style={{ '--rot': '2deg' } as any}>A</span>
+              <span className="w-1.5" />
+              <span className="cutout-box bg-[#10B981] text-white text-xs" style={{ '--rot': '-3deg' } as any}>S</span>
+              <span className="cutout-box bg-[#8B5CF6] text-white text-xs" style={{ '--rot': '1deg' } as any}>H</span>
+              <span className="cutout-box bg-[#EC4899] text-white text-xs" style={{ '--rot': '-2deg' } as any}>O</span>
+              <span className="cutout-box bg-[#EF4444] text-white text-xs" style={{ '--rot': '2deg' } as any}>P</span>
+              <span className="w-2" />
+              <span className="cutout-box bg-[#FEF08A] text-[#713F12] border border-[#FACC15] text-xs font-bold" style={{ '--rot': '-1deg' } as any}>CR 🇨🇷</span>
             </div>
 
             <div className="space-y-2">

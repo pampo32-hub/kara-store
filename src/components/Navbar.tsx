@@ -1,6 +1,5 @@
 import React from 'react';
 import { ShoppingBag, Search, Menu, X } from 'lucide-react';
-import { Logo } from './Logo';
 
 interface NavbarProps {
   cartCount: number;
@@ -29,12 +28,16 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-8 h-20">
           
-          {/* Zone 1: Brand Wordmark / Logo */}
-          <Logo
-            variant="badge"
-            size="md"
+          {/* Zone 1: Single text element wordmark */}
+          <button
             onClick={() => handleNavClick('hero')}
-          />
+            className="flex items-center gap-2 text-2xl sm:text-3xl font-serif tracking-[0.14em] text-[#1C1917] hover:text-[#881337] transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none"
+          >
+            <span className="font-bold text-[#881337]">KARA SHOP</span>
+            <span className="text-[11px] font-mono tracking-widest px-2 py-0.5 bg-[#FEF08A] text-[#713F12] border border-[#FACC15] rounded-xs font-bold">
+              CR 🍓
+            </span>
+          </button>
 
           {/* Zone 2: 4-5 clean single-line text navigation links */}
           <nav className="hidden md:flex items-center gap-7 text-[12px] tracking-widest uppercase font-medium text-[#78716C]">
